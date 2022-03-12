@@ -12,8 +12,8 @@ def get_weather(city: str):
             wind_power: 风力
     """
 
-    app_id = 'k9gevspmqclku7yk'  # 你的APP_ID
-    app_secret = 'TzE4dGY3Mm5hNityNkJ4bzB2bGRZUT09'  # 你的APP_SECRET
+    app_id = 'xxxxxxxxxxxxxxxxx'  # 你的APP_ID
+    app_secret = 'xxxxxxxxxxxxxxxxxxxx'  # 你的APP_SECRET
     api = "https://www.mxnzp.com/api/weather/current/{}?app_id={}&app_secret={}".format(
         city,
         app_id,
