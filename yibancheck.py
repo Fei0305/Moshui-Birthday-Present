@@ -20,5 +20,5 @@ def yiban_check(xh: str):
 
 
 if __name__ == '__main__':
-    stat_str = yiban_check('201995014048')
+    stat_str = yiban_check('2xxxxxxxxxxxxx')
     print(stat_str)
