@@ -125,7 +125,7 @@ def draw_img():
     # 一卡通余额
     # draw.text((30, 248), '一卡通余额:18.95元\n上次消费10元在<老校区风味12>', 'black', font(12))
     try:
-        draw.text((30, 248), get_card_data('202095154059', '137847'), 'black', font(12))
+        draw.text((30, 248), get_card_data('2xxxxxxxxxx', 'xxxxxx'), 'black', font(12))
     except:
         draw.text((30, 248), '出错啦！\n快去找你的宝修BUG！', 'black', font(12))
 
@@ -148,8 +148,8 @@ def draw_img():
         draw.text((321, 132), "{}/42".format(42-wtb_number), 'black', font(13))
         draw.text((321, 151), "林 [    ]", 'black', font(12))
         draw.text((321, 164), "费 [    ]", 'black', font(12))
-        draw.text((343, 151), "{}".format(yiban_check('202095154059')), 'black', font(12))
-        draw.text((343, 164), "{}".format(yiban_check('201995014048')), 'black', font(12))
+        draw.text((343, 151), "{}".format(yiban_check('xxxxxxxxxxx')), 'black', font(12))
+        draw.text((343, 164), "{}".format(yiban_check('xxxxxxxxxxx')), 'black', font(12))
     draw.text((313, 183), "TOR: {}".format(now_time.strftime('%H:%M')), 'black', font(10))
         
 
