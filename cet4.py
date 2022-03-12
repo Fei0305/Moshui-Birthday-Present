@@ -13,7 +13,7 @@ def cet4_word() -> None:
     db = pymysql.connect(
         host='localhost',
         user='root',
-        password='peerless187',
+        password='ssssssssss7',
         database='word'
     )
 
