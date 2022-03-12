@@ -11,11 +11,11 @@ def get_data(cookie: str) -> str:
 
     dateend = datetime.datetime.now()
     datestart = dateend + datetime.timedelta(days=-3)
-    url = "http://yktcx.bjwlxy.cn/Handler/DBTrjn.ashx"
+    url = "xxxxxxxxxxxxxxxxxxxx"
     headers = {
-        'Host': 'yktcx.bjwlxy.cn',
+        'Host': 'xxxxxxxxxxxxxxxxxxxxxxxx',
         'Connection': 'keep-alive',
-        'Referer': 'http://yktcx.bjwlxy.cn/User/User_HisTrjn.aspx?action=Search&searchtype=1&accounttype=AccountNo&accountno=54624&cardno=1357924680&studentno=&idno=&trancode=&datestart=2022-01-01&dateend=2022-01-31&page=1',
+        'Referer': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36',
         'Cookie': cookie
     }
@@ -25,7 +25,7 @@ def get_data(cookie: str) -> str:
         'searchtype': '1',
         'accounttype': 'AccountNo',
         'accountno': '54624',
-        'cardno': '1357924680',
+        'cardno': 'xxxxxxxxxxxxxx',
         'studentno': "",
         'idno': "",
         'trancode': "",
@@ -54,9 +54,9 @@ def get_cookie(username: str, userpassword: str, checkcode: str) -> str:
     :return: cookies值
     """
 
-    url = 'http://yktcx.bjwlxy.cn/Handler/UserLogin.ashx'
-    # username = '201995014048'
-    # userpassword = '053952'
+    url = 'http://yxxxxxxxx.xxxx.cn/Handler/UserLogin.ashx'
+    # username = ''
+    # userpassword = ''
     post_data = {
         'action': 'Login',
         'managetype': 'Front',
@@ -66,9 +66,9 @@ def get_cookie(username: str, userpassword: str, checkcode: str) -> str:
         'checkcode': checkcode
     }
     headers = {
-        'Host': 'yktcx.bjwlxy.cn',
-        'Origin': 'http://yktcx.bjwlxy.cn',
-        'Referer': 'http://yktcx.bjwlxy.cn/',
+        'Host': 'yktcx.xxxxxxxxy.cn',
+        'Origin': 'http://yktcx.xxxxxx.cn',
+        'Referer': 'http://yktcx.xxxxxy.cn/',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36',
         'Cookie': 'ASP.NET_SessionId=qaeslpjfa2ox2c4sx1oyhwus; ChenyisiCheckCode=CheckCode=' + checkcode
     }
@@ -88,12 +88,12 @@ def get_checkcode() -> str:
     """
 
     headers = {
-        'Host': 'yktcx.bjwlxy.cn',
-        'Referer': 'http://yktcx.bjwlxy.cn/Default.aspx',
+        'Host': 'yktcx.bxxxxxxxxxy.cn',
+        'Referer': 'http://yktcx.xxxxxx.cn/Default.aspx',
         'Proxy-Connection': 'keep-alive',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36'
     }
-    url = 'http://yktcx.bjwlxy.cn/CheckCode.aspx'
+    url = 'http://yktcx.xxxxxx.cn/CheckCode.aspx'
     res = requests.get(url, headers=headers)
     # print(res.headers['Set-Cookie'][-12:-8])
     checkcode = res.headers['Set-Cookie'][-12:-8]
@@ -122,5 +122,5 @@ def get_card_data(school_number: str, password: str) -> str:
 
 
 if __name__ == '__main__':
-    card_data = get_card_data('201995014048', '053952')
+    card_data = get_card_data('2xxxxxxx8', 'xxxxxxx2')
     print(card_data)
