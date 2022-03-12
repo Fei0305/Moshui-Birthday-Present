@@ -9,7 +9,7 @@ import time
 
 
 def upload(
-    url='http://192.168.12.13/',
+    url='http://192.168.xx.xx/',
     img_path='/home/pi/moshui/show.png',
     mode=4
 ) -> None:
