@@ -10,8 +10,8 @@ def get_alldate():
     """
 
     str_today = datetime.datetime.today().strftime("%Y%m%d")  # 获取格式化日期如20220305
-    app_id = 'k9gevspmqclku7yk'  # 你的APP_ID
-    app_secret = 'TzE4dGY3Mm5hNityNkJ4bzB2bGRZUT09'  # 你的APP_SECRET
+    app_id = 'xxxxxxxxxxxxxxx'  # 你的APP_ID
+    app_secret = 'xxxxxxxxxxxxxxxxxxxxxx'  # 你的APP_SECRET
     api = "https://www.mxnzp.com/api/holiday/single/{}?ignoreHoliday=false&app_id={}&app_secret={}".format(
         str_today,
         app_id,
